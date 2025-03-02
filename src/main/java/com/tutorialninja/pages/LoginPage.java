@@ -38,18 +38,5 @@ public class LoginPage extends BasePage {
 
 	}
 	
-	@FindBy(xpath="//*[@id=\"content\"]/div/div[2]/div/form/div[2]/a")
-	private WebElement forgetPassword;
-	
-	@FindBy(xpath="//*[@id=\"content\"]/h1")
-	private WebElement title;
-
-	public void forgetPass() {
-		
-		forgetPassword.click();
-		String pageTitle = title.getText();
-	}
-	
-	
 
 }
