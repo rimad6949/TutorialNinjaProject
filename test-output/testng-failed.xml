@@ -5,12 +5,9 @@
     <classes>
       <class name="com.tutorialninja.testcases.LoginTest">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="loginWithvalidIDAndInvalidPass"/>
           <include name="tearDown"/>
-          <include name="loginWithInvalidIDAndValidPass"/>
-          <include name="loginWithInvalidCred"/>
-          <include name="loginWithblankCred"/>
+          <include name="setUp"/>
+          <include name="forgotPassword"/>
         </methods>
       </class> <!-- com.tutorialninja.testcases.LoginTest -->
     </classes>
