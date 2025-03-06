@@ -14,12 +14,6 @@ public class LoginPage extends BasePage {
 
 	}
 
-//	@FindBy(linkText = "My Account")
-//	private WebElement myaccount;
-//
-//	@FindBy(linkText = "Login")
-//	private WebElement loginBtn;
-
 	@FindBy(name = "email")
 	private WebElement emailAddress;
 

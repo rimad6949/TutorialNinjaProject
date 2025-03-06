@@ -1,11 +1,9 @@
 package com.tutorialninja.testcases;
 
-public class Roughwork {
+import com.tutorialninja.base.BaseTest;
 
-	public static void main(String[] args) {
-		
-	
+public class Roughwork extends BaseTest{
 
-	}
+
 
 }

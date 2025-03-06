@@ -44,9 +44,10 @@ public class BaseTest {
 		driver.quit();
 	}
 
-	public String getDate() {
+	public String getEmailAddress() {
 		Date d = new Date();
-		return d.toString().replace(" ", "").replace(":", "");
+		String timestamp = d.toString().replace(" ", "").replace(":", "");
+		return "ria"+timestamp+"@gmail.com";
 	}
 
 }

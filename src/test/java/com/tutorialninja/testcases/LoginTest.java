@@ -37,7 +37,7 @@ public class LoginTest extends BaseTest {
 	public void loginWithInvalidCred() {
 
 		lp = new LoginPage(driver);
-		lp.login("minnie" + getDate() + "01@gmail.com", "test123w4");
+		lp.login("minnie" + getEmailAddress() + "01@gmail.com", "test123w4");
 		String warningmsg = driver.findElement(By.xpath("//*[@id=\"account-login\"]/div[1]")).getText();
 		String expectedResult = "Warning: No match for E-Mail Address and/or Password.";
 		AssertJUnit.assertEquals(warningmsg, expectedResult);
@@ -58,7 +58,7 @@ public class LoginTest extends BaseTest {
 	public void loginWithInvalidIDAndValidPass() {
 
 		lp = new LoginPage(driver);
-		lp.login("minnie" + getDate() + "01@gmail.com", "test1234");
+		lp.login("minnie" + getEmailAddress() + "01@gmail.com", "test1234");
 		String warningmsg = driver.findElement(By.xpath("//*[@id=\"account-login\"]/div[1]")).getText();
 		System.out.println(warningmsg);
 
