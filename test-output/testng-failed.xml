@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.tutorialninja.testcases.LoginTest">
+      <class name="com.tutorialninja.testcases.RegistrationTest">
         <methods>
+          <include name="verifyRegisteringAUser"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="forgotPassword"/>
         </methods>
-      </class> <!-- com.tutorialninja.testcases.LoginTest -->
+      </class> <!-- com.tutorialninja.testcases.RegistrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
