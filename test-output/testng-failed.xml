@@ -5,7 +5,7 @@
     <classes>
       <class name="com.tutorialninja.testcases.RegistrationTest">
         <methods>
-          <include name="verifyRegisteringAUser"/>
+          <include name="uncheckTheAcceptCheckboxAndSubmit"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
