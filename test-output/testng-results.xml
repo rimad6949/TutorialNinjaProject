@@ -1,21 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-07T01:17:15Z" name="Default suite" finished-at="2025-03-07T01:17:24Z" duration-ms="9221">
+  <suite started-at="2025-03-07T21:13:55Z" name="Default suite" finished-at="2025-03-07T21:14:42Z" duration-ms="47062">
     <groups>
     </groups>
-    <test started-at="2025-03-07T01:17:15Z" name="Default test" finished-at="2025-03-07T01:17:24Z" duration-ms="9221">
+    <test started-at="2025-03-07T21:13:55Z" name="Default test" finished-at="2025-03-07T21:14:42Z" duration-ms="47062">
       <class name="com.tutorialninja.testcases.RegistrationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-06T17:17:15Z" name="setUp" finished-at="2025-03-06T17:17:21Z" duration-ms="6441" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:13:55Z" name="setUp" finished-at="2025-03-07T13:14:01Z" duration-ms="6088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorMsgIfAllFieldsAreBlanks()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-06T17:17:21Z" name="verifyErrorMsgIfAllFieldsAreBlanks" finished-at="2025-03-06T17:17:24Z" duration-ms="2533" status="PASS">
+        <test-method signature="verifyRegisteringAUser()[pri:1, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:01Z" name="verifyRegisteringAUser" finished-at="2025-03-07T13:14:04Z" duration-ms="3148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisteringAUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:04Z" name="tearDown" finished-at="2025-03-07T13:14:04Z" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:04Z" name="setUp" finished-at="2025-03-07T13:14:09Z" duration-ms="4361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyErrorMsgIfFirstNameFieldAreBlanks()[pri:2, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:09Z" name="verifyErrorMsgIfFirstNameFieldAreBlanks" finished-at="2025-03-07T13:14:11Z" duration-ms="2598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorMsgIfFirstNameFieldAreBlanks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:11Z" name="tearDown" finished-at="2025-03-07T13:14:12Z" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:12Z" name="setUp" finished-at="2025-03-07T13:14:16Z" duration-ms="3958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMsgEnteringTwoDifferentPasswords()[pri:3, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:16Z" name="verifyMsgEnteringTwoDifferentPasswords" finished-at="2025-03-07T13:14:18Z" duration-ms="2530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMsgEnteringTwoDifferentPasswords -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:18Z" name="tearDown" finished-at="2025-03-07T13:14:18Z" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:18Z" name="setUp" finished-at="2025-03-07T13:14:22Z" duration-ms="4058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMsgWhenDuplicateEmailIsAdded()[pri:4, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:22Z" name="verifyMsgWhenDuplicateEmailIsAdded" finished-at="2025-03-07T13:14:26Z" duration-ms="3443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMsgWhenDuplicateEmailIsAdded -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:26Z" name="tearDown" finished-at="2025-03-07T13:14:26Z" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:26Z" name="setUp" finished-at="2025-03-07T13:14:31Z" duration-ms="4906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="uncheckTheAcceptCheckboxAndSubmit()[pri:5, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:31Z" name="uncheckTheAcceptCheckboxAndSubmit" finished-at="2025-03-07T13:14:35Z" duration-ms="3614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uncheckTheAcceptCheckboxAndSubmit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:35Z" name="tearDown" finished-at="2025-03-07T13:14:35Z" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:35Z" name="setUp" finished-at="2025-03-07T13:14:39Z" duration-ms="4492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyErrorMsgIfAllFieldsAreBlanks()[pri:6, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:39Z" name="verifyErrorMsgIfAllFieldsAreBlanks" finished-at="2025-03-07T13:14:42Z" duration-ms="2400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyErrorMsgIfAllFieldsAreBlanks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-06T17:17:24Z" name="tearDown" finished-at="2025-03-06T17:17:24Z" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@48f278eb]" started-at="2025-03-07T13:14:42Z" name="tearDown" finished-at="2025-03-07T13:14:42Z" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
