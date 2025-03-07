@@ -2,6 +2,7 @@ package com.tutorialninja.pages;
 
 import java.util.HashMap;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,10 +37,13 @@ public class RegistrationPage extends BasePage{
 		private WebElement confirmpwd;
 		
 		@FindBy(xpath="//input[@name='agree']")
-		private WebElement agreecb;
+		public WebElement agreecb;
 		
 		@FindBy(xpath="//input[@value='Continue']")
 		private WebElement continuebtn;
+		
+		@FindBy(xpath="//div[@class='text-danger']")
+		private WebElement fnameErrorMsg;
 		
 		public void registerAUser(String firstname, String lastname, String emailadd, String ph, String password, String confirmPass) {
 			
@@ -50,9 +54,14 @@ public class RegistrationPage extends BasePage{
 			phone.sendKeys(ph);
 			pwd.sendKeys(password);
 			confirmpwd.sendKeys(confirmPass);
-			agreecb.click();
-			//continuebtn.clear();
 		}
 		
+		public void clickOnAgreeCheckbox() {
+			agreecb.click();
+		}
+		
+		public void clickOnContinue() {
+			continuebtn.click();
+		}
 
 	}
