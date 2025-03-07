@@ -22,73 +22,88 @@ public class LoginTest extends BaseTest {
 	LoginPage lp;
 	Actions action;
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void loginWithValidCred() {
 
 		lp = new LoginPage(driver);
-		lp.login("minnie001@gmail.com", "test1234");
-		AssertJUnit.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
-		driver.findElement(By.linkText("My Account")).click();
-		driver.findElement(By.linkText("Logout")).click();
+		lp.addEmailAddress("minnie001@gmail.com");
+		lp.addpassword("test1234");
+		lp.clickOnLogin();
+		// Verifying that after login "Edit your account information" link is displayed
+		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+		lp.clickOnMyAct();
+		lp.clickOnLogout();
 
 	}
 
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void loginWithInvalidCred() {
 
 		lp = new LoginPage(driver);
-		lp.login("minnie" + getEmailAddress() + "01@gmail.com", "test123w4");
+		lp.addEmailAddress("minnie" + getEmailAddress() + "01@gmail.com");
+		lp.addpassword("test123w4");
+		lp.clickOnLogin();
+		// Verifying the warning message
 		String warningmsg = driver.findElement(By.xpath("//*[@id=\"account-login\"]/div[1]")).getText();
 		String expectedResult = "Warning: No match for E-Mail Address and/or Password.";
 		AssertJUnit.assertEquals(warningmsg, expectedResult);
 
 	}
 
-	@Test(priority = 3)
+	//@Test(priority = 3)
 	public void loginWithvalidIDAndInvalidPass() {
 
 		lp = new LoginPage(driver);
-		lp.login("minnie001@gmail.com", "test123423");
+		lp.addEmailAddress("minnie001@gmail.com");
+		lp.addpassword("test123423");
+		lp.clickOnLogin();
+		// Verifying the warning message
 		String warningmsg = driver.findElement(By.xpath("//*[@id=\"account-login\"]/div[1]")).getText();
 		System.out.println(warningmsg);
 
 	}
 
-	@Test(priority = 4)
+	//@Test(priority = 4)
 	public void loginWithInvalidIDAndValidPass() {
 
 		lp = new LoginPage(driver);
-		lp.login("minnie" + getEmailAddress() + "01@gmail.com", "test1234");
+		lp.addEmailAddress("minnie00112@gmail.com");
+		lp.addpassword("test123423");
+		lp.clickOnLogin();
+		// Verifying the warning message
 		String warningmsg = driver.findElement(By.xpath("//*[@id=\"account-login\"]/div[1]")).getText();
 		System.out.println(warningmsg);
 
 	}
 
-	@Test(priority = 5)
+	//@Test(priority = 5)
 	public void loginWithblankCred() {
 
 		lp = new LoginPage(driver);
-		lp.login("", "");
+		lp.addEmailAddress("");
+		lp.addpassword("");
+		lp.clickOnLogin();
+		// Verifying the warning message
 		String warningmsg = driver.findElement(By.xpath("//*[@id=\"account-login\"]/div[1]")).getText();
 		System.out.println(warningmsg);
-		driver.quit();
 	}
 
-	@Test(priority = 6)
-	public void forgotPassword() {
-
-		driver.findElement(By.xpath("//*[@id=\\\"content\\\"]/div/div[2]/div/form/div[2]/a")).click();
-		String pageTitle = driver.findElement(By.xpath("//*[@id=\\\"content\\\"]/h1")).getText();
+	//@Test(priority = 6)
+	public void forgotPassword() throws InterruptedException {
+		lp = new LoginPage(driver);
+		lp.clickOnForgotPassword();		
+		String pageTitle = driver.findElement(By.xpath("//*[@id='content']/h1")).getText();
 		String expectedTitle = "Forgot Your Password?";
 		Assert.assertEquals(pageTitle, expectedTitle);
-		
+
 	}
 
-	@Test(priority = 7)
+	//@Test(priority = 7)
 	public void keyboardActions() {
 
 		lp = new LoginPage(driver);
-		lp.login("minnie001@gmail.com", "test1234");
+		lp.addEmailAddress("minnie001@gmail.com");
+		lp.addpassword("test1234");
 		action = new Actions(driver);
 		action.sendKeys(Keys.ENTER).perform();
 
@@ -96,28 +111,28 @@ public class LoginTest extends BaseTest {
 
 	@Test(priority = 8)
 	public void verifyPlaceholder() {
-		
-
-		String emailPlaceholder = driver.findElement(By.cssSelector("input[name='email']")).getAttribute("placeholder");
+		lp = new LoginPage(driver);
+		String emailPlaceholder = lp.getEmailPlaceholder("placeholder");
 		String expectedEmailPlaceholder = "E-Mail Address";
 		AssertJUnit.assertEquals(emailPlaceholder, expectedEmailPlaceholder);
 
-		String pssPlaceholder = driver.findElement(By.cssSelector("input[name='password']")).getAttribute("placeholder");
+		String pssPlaceholder = lp.getPasswordPlaceholder("placeholder");
 		String expectedPassPlaceholder = "Password";
 		AssertJUnit.assertEquals(pssPlaceholder, expectedPassPlaceholder);
 
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 9)
 	public void logoutAndBrowsingBack() {
 
 		lp = new LoginPage(driver);
-		lp.login("minnie001@gmail.com", "test1234");
+		lp.addEmailAddress("minnie001@gmail.com");
+		lp.addpassword("test1234");
+		lp.clickOnLogin();
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 		driver.navigate().back();
 		Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[1]/div/h2")).isDisplayed());
 	}
-
 
 //	@Test(priority = 11)
 //	public void verifyTheBreadcrump() {

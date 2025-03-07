@@ -45,15 +45,31 @@ public class RegistrationPage extends BasePage {
 	@FindBy(xpath = "//div[@class='text-danger']")
 	private WebElement fnameErrorMsg;
 
-	public void registerAUser(String firstname, String lastname, String emailadd, String ph, String password,
-			String confirmPass) {
-
+	public void clickOnRegister() {
 		register.click();
+	}
+
+	public void enterFName(String firstname) {
 		fname.sendKeys(firstname);
+	}
+
+	public void enterLName(String lastname) {
 		lname.sendKeys(lastname);
+	}
+
+	public void enterEmail(String emailadd) {
 		email.sendKeys(emailadd);
+	}
+
+	public void enterPhoneNum(String ph) {
 		phone.sendKeys(ph);
+	}
+
+	public void enterPassword(String password) {
 		pwd.sendKeys(password);
+	}
+
+	public void enterConfirmPassword(String confirmPass) {
 		confirmpwd.sendKeys(confirmPass);
 	}
 
@@ -100,7 +116,7 @@ public class RegistrationPage extends BasePage {
 		String teleErrMsg = telephoneErrMsg.getText();
 		return teleErrMsg;
 	}
-	
+
 	// Code to get password error message
 	@FindBy(xpath = "//input[@name='password']/following-sibling::div")
 	private WebElement passwordErrMsg;

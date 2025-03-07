@@ -17,7 +17,13 @@ public class RegistrationTest extends BaseTest {
 	public void verifyRegisteringAUser() {
 
 		rp = new RegistrationPage(driver);
-		rp.registerAUser("ria", "lim", getEmailAddress(), "839827211", "test1234", "test1234");
+		rp.clickOnRegister();
+		rp.enterFName("Lin");
+		rp.enterLName("Lobo");
+		rp.enterEmail(getEmailAddress());
+		rp.enterPhoneNum("839827211");
+		rp.enterPassword("test1234");
+		rp.enterConfirmPassword("test1234");
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
 		String actualConfirmationMsg = driver.findElement(By.xpath("//div[@id='content']/h1")).getText();
@@ -28,7 +34,13 @@ public class RegistrationTest extends BaseTest {
 	public void verifyErrorMsgIfFirstNameFieldAreBlanks() {
 
 		rp = new RegistrationPage(driver);
-		rp.registerAUser("", "lim", getEmailAddress(), "839827211", "test1234", "test1234");
+		rp.clickOnRegister();
+		rp.enterFName("");
+		rp.enterLName("Lobo");
+		rp.enterEmail(getEmailAddress());
+		rp.enterPhoneNum("839827211");
+		rp.enterPassword("test1234");
+		rp.enterConfirmPassword("test1234");
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
 		Assert.assertEquals(rp.getFirstNameErrMsg(), "First Name must be between 1 and 32 characters!");
@@ -38,7 +50,13 @@ public class RegistrationTest extends BaseTest {
 	@Test(priority = 3)
 	public void verifyMsgEnteringTwoDifferentPasswords() {
 		rp = new RegistrationPage(driver);
-		rp.registerAUser("ria", "lim", getEmailAddress(), "839827211", "test1234212", "test1234");
+		rp.clickOnRegister();
+		rp.enterFName("Lin");
+		rp.enterLName("Lobo");
+		rp.enterEmail(getEmailAddress());
+		rp.enterPhoneNum("839827211");
+		rp.enterPassword("test1234");
+		rp.enterConfirmPassword("test123456");
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
 		String passwordErrorMsg = driver.findElement(By.xpath("//div[@class=\"text-danger\"]")).getText();
@@ -50,7 +68,13 @@ public class RegistrationTest extends BaseTest {
 	public void verifyMsgWhenDuplicateEmailIsAdded() {
 
 		rp = new RegistrationPage(driver);
-		rp.registerAUser("ria", "lim", "minnie001@gmail.com", "839827211", "test1234", "test1234");
+		rp.clickOnRegister();
+		rp.enterFName("Lin");
+		rp.enterLName("Lobo");
+		rp.enterEmail("minnie001@gmail.com");
+		rp.enterPhoneNum("839827211");
+		rp.enterPassword("test1234");
+		rp.enterConfirmPassword("test1234");
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
 		String duplicateErrorMsg = driver.findElement(By.xpath("//*[@id=\"account-register\"]/div[1]")).getText();
@@ -61,7 +85,13 @@ public class RegistrationTest extends BaseTest {
 	 @Test(priority=5)
 	public void uncheckTheAcceptCheckboxAndSubmit(){
 		rp = new RegistrationPage(driver);
-		rp.registerAUser("ria", "lim", getEmailAddress(), "839827211", "test1234", "test1234");
+		rp.clickOnRegister();
+		rp.enterFName("Lin");
+		rp.enterLName("Lobo");
+		rp.enterEmail(getEmailAddress());
+		rp.enterPhoneNum("839827211");
+		rp.enterPassword("test1234");
+		rp.enterConfirmPassword("test1234");
 		rp.clickOnContinue();		
 		String acceptErrorMsg = driver.findElement(By.xpath("//*[@id=\"account-register\"]/div[1]")).getText();
 		Assert.assertEquals(acceptErrorMsg, "Warning: You must agree to the Privacy Policy!");
@@ -72,7 +102,13 @@ public class RegistrationTest extends BaseTest {
 	public void verifyErrorMsgIfAllFieldsAreBlanks() {
 		
 		rp = new RegistrationPage(driver);
-		rp.registerAUser("", "", "", "", "", "");
+		rp.clickOnRegister();
+		rp.enterFName("");
+		rp.enterLName("");
+		rp.enterEmail("");
+		rp.enterPhoneNum("");
+		rp.enterPassword("");
+		rp.enterConfirmPassword("");
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
 		Assert.assertEquals(rp.getFirstNameErrMsg(), "First Name must be between 1 and 32 characters!");
