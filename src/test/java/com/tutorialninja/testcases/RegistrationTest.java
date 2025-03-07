@@ -25,25 +25,24 @@ public class RegistrationTest extends BaseTest {
 	}
 
 	@Test(priority = 2)
-	public void verifyErrorMsgIfFieldAreBlanks() {
+	public void verifyErrorMsgIfFirstNameFieldAreBlanks() {
 
 		rp = new RegistrationPage(driver);
 		rp.registerAUser("", "lim", getEmailAddress(), "839827211", "test1234", "test1234");
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
-		String fnameErrorMsg = driver.findElement(By.xpath("//div[@class=\"text-danger\"]")).getText();
-		Assert.assertEquals(fnameErrorMsg, "First Name must be between 1 and 32 characters!");
+		Assert.assertEquals(rp.getFirstNameErrMsg(), "First Name must be between 1 and 32 characters!");
 
 	}
-
+	
 	@Test(priority = 3)
 	public void verifyMsgEnteringTwoDifferentPasswords() {
 		rp = new RegistrationPage(driver);
 		rp.registerAUser("ria", "lim", getEmailAddress(), "839827211", "test1234212", "test1234");
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
-		String fnameErrorMsg = driver.findElement(By.xpath("//div[@class=\"text-danger\"]")).getText();
-		Assert.assertEquals(fnameErrorMsg, "Password confirmation does not match password!");
+		String passwordErrorMsg = driver.findElement(By.xpath("//div[@class=\"text-danger\"]")).getText();
+		Assert.assertEquals(passwordErrorMsg, "Password confirmation does not match password!");
 
 	}
 
@@ -54,8 +53,8 @@ public class RegistrationTest extends BaseTest {
 		rp.registerAUser("ria", "lim", "minnie001@gmail.com", "839827211", "test1234", "test1234");
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
-		String fnameErrorMsg = driver.findElement(By.xpath("//*[@id=\"account-register\"]/div[1]")).getText();
-		Assert.assertEquals(fnameErrorMsg, "Warning: E-Mail Address is already registered!");
+		String duplicateErrorMsg = driver.findElement(By.xpath("//*[@id=\"account-register\"]/div[1]")).getText();
+		Assert.assertEquals(duplicateErrorMsg, "Warning: E-Mail Address is already registered!");
 
 	}
 	 
@@ -64,9 +63,25 @@ public class RegistrationTest extends BaseTest {
 		rp = new RegistrationPage(driver);
 		rp.registerAUser("ria", "lim", getEmailAddress(), "839827211", "test1234", "test1234");
 		rp.clickOnContinue();		
-		String fnameErrorMsg = driver.findElement(By.xpath("//*[@id=\"account-register\"]/div[1]")).getText();
-		Assert.assertEquals(fnameErrorMsg, "Warning: You must agree to the Privacy Policy!");
+		String acceptErrorMsg = driver.findElement(By.xpath("//*[@id=\"account-register\"]/div[1]")).getText();
+		Assert.assertEquals(acceptErrorMsg, "Warning: You must agree to the Privacy Policy!");
 
+	}
+	
+	@Test(priority=6)
+	public void verifyErrorMsgIfAllFieldsAreBlanks() {
+		
+		rp = new RegistrationPage(driver);
+		rp.registerAUser("", "", "", "", "", "");
+		rp.clickOnAgreeCheckbox();
+		rp.clickOnContinue();
+		Assert.assertEquals(rp.getFirstNameErrMsg(), "First Name must be between 1 and 32 characters!");
+		Assert.assertEquals(rp.getLastNameErrMsg(), "Last Name must be between 1 and 32 characters!");
+		Assert.assertEquals(rp.getemailErrMsg(), "E-Mail Address does not appear to be valid!");
+		Assert.assertEquals(rp.gettelephoneErrMsg(), "Telephone must be between 3 and 32 characters!");
+		Assert.assertEquals(rp.getpasswordErrMsg(), "Password must be between 4 and 20 characters!");
+		
+		
 	}
 
 }
