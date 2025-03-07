@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest {
 	LoginPage lp;
 	Actions action;
 
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	public void loginWithValidCred() {
 
 		lp = new LoginPage(driver);
@@ -36,7 +36,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	public void loginWithInvalidCred() {
 
 		lp = new LoginPage(driver);
@@ -50,7 +50,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	//@Test(priority = 3)
+	@Test(priority = 3)
 	public void loginWithvalidIDAndInvalidPass() {
 
 		lp = new LoginPage(driver);
@@ -63,7 +63,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	//@Test(priority = 4)
+	@Test(priority = 4)
 	public void loginWithInvalidIDAndValidPass() {
 
 		lp = new LoginPage(driver);
@@ -76,7 +76,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	//@Test(priority = 5)
+	@Test(priority = 5)
 	public void loginWithblankCred() {
 
 		lp = new LoginPage(driver);
@@ -88,7 +88,7 @@ public class LoginTest extends BaseTest {
 		System.out.println(warningmsg);
 	}
 
-	//@Test(priority = 6)
+	@Test(priority = 6)
 	public void forgotPassword() throws InterruptedException {
 		lp = new LoginPage(driver);
 		lp.clickOnForgotPassword();		
@@ -98,7 +98,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	//@Test(priority = 7)
+	@Test(priority = 7)
 	public void keyboardActions() {
 
 		lp = new LoginPage(driver);

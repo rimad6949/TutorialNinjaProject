@@ -16,23 +16,39 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseTest {
 
 	public WebDriver driver;
-	public Properties config = new Properties();
+	public Properties config;
 	public FileInputStream fis;
 
 	@BeforeMethod
-	public void setUp(){
-		
-		String browserName = "chrome";
+	public void setUp() {
 
-		if (browserName.equals("chrome")) {
+		config = new Properties();
+		try {
+			fis = new FileInputStream(
+					System.getProperty("user.dir") + "/src/test/resources/properties/config.properties");
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			config.load(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		String browser = config.getProperty("browserName");
+
+		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 
-		} else if (browserName.equals("firefox")) {
+		} else if (browser.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 
 		}
 
-		driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
+		driver.get(config.getProperty("testSiteURL"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -40,14 +56,16 @@ public class BaseTest {
 
 	@AfterMethod
 	public void tearDown() {
+		if (driver != null) {
+			driver.quit();
+		}
 
-		driver.quit();
 	}
 
 	public String getEmailAddress() {
 		Date d = new Date();
 		String timestamp = d.toString().replace(" ", "").replace(":", "");
-		return "ria"+timestamp+"@gmail.com";
+		return "ria" + timestamp + "@gmail.com";
 	}
 
 }
