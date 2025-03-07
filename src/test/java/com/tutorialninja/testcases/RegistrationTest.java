@@ -13,7 +13,7 @@ public class RegistrationTest extends BaseTest {
 
 	RegistrationPage rp;
 
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	public void verifyRegisteringAUser() {
 
 		rp = new RegistrationPage(driver);
@@ -24,7 +24,7 @@ public class RegistrationTest extends BaseTest {
 		Assert.assertEquals(actualConfirmationMsg, "Your Account Has Been Created!");
 	}
 
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	public void verifyErrorMsgIfFieldAreBlanks() {
 
 		rp = new RegistrationPage(driver);
@@ -36,7 +36,7 @@ public class RegistrationTest extends BaseTest {
 
 	}
 
-	//@Test(priority = 3)
+	@Test(priority = 3)
 	public void verifyMsgEnteringTwoDifferentPasswords() {
 		rp = new RegistrationPage(driver);
 		rp.registerAUser("ria", "lim", getEmailAddress(), "839827211", "test1234212", "test1234");
@@ -47,7 +47,7 @@ public class RegistrationTest extends BaseTest {
 
 	}
 
-	// @Test(priority=4)
+	@Test(priority=4)
 	public void verifyMsgWhenDuplicateEmailIsAdded() {
 
 		rp = new RegistrationPage(driver);
@@ -59,7 +59,7 @@ public class RegistrationTest extends BaseTest {
 
 	}
 	 
-	 @Test
+	 @Test(priority=5)
 	public void uncheckTheAcceptCheckboxAndSubmit(){
 		rp = new RegistrationPage(driver);
 		rp.registerAUser("ria", "lim", getEmailAddress(), "839827211", "test1234", "test1234");
