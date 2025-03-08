@@ -1,8 +1,10 @@
+package com.tutorialninja.utilities;
 
-public class ExtentListeners implements ITestListener{
-	
+import java.util.Date;
+
+import org.testng.ITestListener;
+
+public class ExtentListeners implements ITestListener {
 	static Date d = new Date();
-	String filemame = Extent_;
-	
 
 }
