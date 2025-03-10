@@ -4,6 +4,10 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.Date;
 import java.util.List;
 
@@ -30,7 +34,7 @@ public class LoginTest extends BaseTest {
 		lp.addpassword("test1234");
 		lp.clickOnLogin();
 		// Verifying that after login "Edit your account information" link is displayed
-		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+		AssertJUnit.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 		lp.clickOnMyAct();
 		lp.clickOnLogout();
 
@@ -94,7 +98,7 @@ public class LoginTest extends BaseTest {
 		lp.clickOnForgotPassword();		
 		String pageTitle = driver.findElement(By.xpath("//*[@id='content']/h1")).getText();
 		String expectedTitle = "Forgot Your Password?";
-		Assert.assertEquals(pageTitle, expectedTitle);
+		AssertJUnit.assertEquals(pageTitle, expectedTitle);
 
 	}
 
@@ -129,9 +133,9 @@ public class LoginTest extends BaseTest {
 		lp.addEmailAddress("minnie001@gmail.com");
 		lp.addpassword("test1234");
 		lp.clickOnLogin();
-		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+		AssertJUnit.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 		driver.navigate().back();
-		Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[1]/div/h2")).isDisplayed());
+		AssertJUnit.assertTrue(driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[1]/div/h2")).isDisplayed());
 	}
 
 //	@Test(priority = 11)

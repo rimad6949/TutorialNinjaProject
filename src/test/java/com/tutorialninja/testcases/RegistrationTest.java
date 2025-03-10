@@ -1,5 +1,9 @@
 package com.tutorialninja.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.HashMap;
 
 import org.openqa.selenium.By;
@@ -27,7 +31,7 @@ public class RegistrationTest extends BaseTest {
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
 		String actualConfirmationMsg = driver.findElement(By.xpath("//div[@id='content']/h1")).getText();
-		Assert.assertEquals(actualConfirmationMsg, "Your Account Has Been Created!");
+		AssertJUnit.assertEquals(actualConfirmationMsg, "Your Account Has Been Created!");
 	}
 
 	@Test(priority = 2)
@@ -43,7 +47,7 @@ public class RegistrationTest extends BaseTest {
 		rp.enterConfirmPassword("test1234");
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
-		Assert.assertEquals(rp.getFirstNameErrMsg(), "First Name must be between 1 and 32 characters!");
+		AssertJUnit.assertEquals(rp.getFirstNameErrMsg(), "First Name must be between 1 and 32 characters!");
 
 	}
 	
@@ -60,7 +64,7 @@ public class RegistrationTest extends BaseTest {
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
 		String passwordErrorMsg = driver.findElement(By.xpath("//div[@class=\"text-danger\"]")).getText();
-		Assert.assertEquals(passwordErrorMsg, "Password confirmation does not match password!");
+		AssertJUnit.assertEquals(passwordErrorMsg, "Password confirmation does not match password!");
 
 	}
 
@@ -78,7 +82,7 @@ public class RegistrationTest extends BaseTest {
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
 		String duplicateErrorMsg = driver.findElement(By.xpath("//*[@id=\"account-register\"]/div[1]")).getText();
-		Assert.assertEquals(duplicateErrorMsg, "Warning: E-Mail Address is already registered!");
+		AssertJUnit.assertEquals(duplicateErrorMsg, "Warning: E-Mail Address is already registered!");
 
 	}
 	 
@@ -94,7 +98,7 @@ public class RegistrationTest extends BaseTest {
 		rp.enterConfirmPassword("test1234");
 		rp.clickOnContinue();		
 		String acceptErrorMsg = driver.findElement(By.xpath("//*[@id=\"account-register\"]/div[1]")).getText();
-		Assert.assertEquals(acceptErrorMsg, "Warning: You must agree to the Privacy Policy!");
+		AssertJUnit.assertEquals(acceptErrorMsg, "Warning: You must agree to the Privacy Policy!");
 
 	}
 	
@@ -111,11 +115,11 @@ public class RegistrationTest extends BaseTest {
 		rp.enterConfirmPassword("");
 		rp.clickOnAgreeCheckbox();
 		rp.clickOnContinue();
-		Assert.assertEquals(rp.getFirstNameErrMsg(), "First Name must be between 1 and 32 characters!");
-		Assert.assertEquals(rp.getLastNameErrMsg(), "Last Name must be between 1 and 32 characters!");
-		Assert.assertEquals(rp.getemailErrMsg(), "E-Mail Address does not appear to be valid!");
-		Assert.assertEquals(rp.gettelephoneErrMsg(), "Telephone must be between 3 and 32 characters!");
-		Assert.assertEquals(rp.getpasswordErrMsg(), "Password must be between 4 and 20 characters!");
+		AssertJUnit.assertEquals(rp.getFirstNameErrMsg(), "First Name must be between 1 and 32 characters!");
+		AssertJUnit.assertEquals(rp.getLastNameErrMsg(), "Last Name must be between 1 and 32 characters!");
+		AssertJUnit.assertEquals(rp.getemailErrMsg(), "E-Mail Address does not appear to be valid!");
+		AssertJUnit.assertEquals(rp.gettelephoneErrMsg(), "Telephone must be between 3 and 32 characters!");
+		AssertJUnit.assertEquals(rp.getpasswordErrMsg(), "Password must be between 4 and 20 characters!");
 		
 		
 	}
