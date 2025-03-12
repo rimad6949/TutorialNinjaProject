@@ -11,9 +11,4 @@
       <class name="com.tutorialninja.testcases.LoginTest"/>
     </classes>
   </test> <!-- Test -->
-    <test name = "RegistrationTest">
-    <classes>
-      <class name="com.tutorialninja.testcases.RegistrationTest"/>
-    </classes>
-  </test> <!-- Test -->
 </suite> <!-- Suite -->

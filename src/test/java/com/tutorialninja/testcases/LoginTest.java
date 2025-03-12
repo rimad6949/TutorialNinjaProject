@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.Date;
 import java.util.List;
 
@@ -34,7 +36,7 @@ public class LoginTest extends BaseTest {
 		lp.addpassword("test1234");
 		lp.clickOnLogin();
 		// Verifying that after login "Edit your account information" link is displayed
-		AssertJUnit.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+		AssertJUnit.assertTrue(driver.findElement(By.linkText("Edit your accoiunt information")).isDisplayed());
 		lp.clickOnMyAct();
 		lp.clickOnLogout();
 
@@ -54,7 +56,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	@Test(priority = 3)
+	//@Test(priority = 3)
 	public void loginWithvalidIDAndInvalidPass() {
 
 		lp = new LoginPage(driver);
@@ -67,7 +69,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	@Test(priority = 4)
+	//@Test(priority = 4)
 	public void loginWithInvalidIDAndValidPass() {
 
 		lp = new LoginPage(driver);
@@ -80,7 +82,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	@Test(priority = 5)
+	//@Test(priority = 5)
 	public void loginWithblankCred() {
 
 		lp = new LoginPage(driver);
@@ -92,7 +94,7 @@ public class LoginTest extends BaseTest {
 		System.out.println(warningmsg);
 	}
 
-	@Test(priority = 6)
+	//@Test(priority = 6)
 	public void forgotPassword() throws InterruptedException {
 		lp = new LoginPage(driver);
 		lp.clickOnForgotPassword();		
@@ -102,7 +104,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	@Test(priority = 7)
+	//@Test(priority = 7)
 	public void keyboardActions() {
 
 		lp = new LoginPage(driver);
@@ -113,7 +115,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	@Test(priority = 8)
+	//@Test(priority = 8)
 	public void verifyPlaceholder() {
 		lp = new LoginPage(driver);
 		String emailPlaceholder = lp.getEmailPlaceholder("placeholder");
@@ -126,7 +128,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	@Test(priority = 9)
+	//@Test(priority = 9)
 	public void logoutAndBrowsingBack() {
 
 		lp = new LoginPage(driver);

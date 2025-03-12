@@ -1,197 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[<a href=Tue_Mar_11_18_03_13_PDT_2025.jpg target="_blank">Screenshot link</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=Tue_Mar_11_18_03_13_PDT_2025.jpg target="_blank"><img src=Tue_Mar_11_18_03_13_PDT_2025.jpg height=200 width=200></a>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-03-10T13:16:44 PDT" name="Suite" finished-at="2025-03-10T13:18:19 PDT" duration-ms="95028">
+  <suite started-at="2025-03-11T18:02:55 PDT" name="Suite" finished-at="2025-03-11T18:03:20 PDT" duration-ms="25243">
     <groups>
     </groups>
-    <test started-at="2025-03-10T13:16:44 PDT" name="LoginTest" finished-at="2025-03-10T13:17:29 PDT" duration-ms="44481">
-      <class name="com.tutorialninja.testcases.RegistrationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:16:44 PDT" name="setUp" finished-at="2025-03-10T13:16:51 PDT" duration-ms="7164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyRegisteringAUser()[pri:1, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:16:51 PDT" name="verifyRegisteringAUser" finished-at="2025-03-10T13:16:55 PDT" duration-ms="3117" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegisteringAUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:16:55 PDT" name="tearDown" finished-at="2025-03-10T13:16:55 PDT" duration-ms="254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:16:55 PDT" name="setUp" finished-at="2025-03-10T13:16:59 PDT" duration-ms="4091" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorMsgIfFirstNameFieldAreBlanks()[pri:2, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:16:59 PDT" name="verifyErrorMsgIfFirstNameFieldAreBlanks" finished-at="2025-03-10T13:17:02 PDT" duration-ms="2668" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorMsgIfFirstNameFieldAreBlanks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:02 PDT" name="tearDown" finished-at="2025-03-10T13:17:02 PDT" duration-ms="212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:02 PDT" name="setUp" finished-at="2025-03-10T13:17:06 PDT" duration-ms="4200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyMsgEnteringTwoDifferentPasswords()[pri:3, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:06 PDT" name="verifyMsgEnteringTwoDifferentPasswords" finished-at="2025-03-10T13:17:09 PDT" duration-ms="2842" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMsgEnteringTwoDifferentPasswords -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:09 PDT" name="tearDown" finished-at="2025-03-10T13:17:09 PDT" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:09 PDT" name="setUp" finished-at="2025-03-10T13:17:13 PDT" duration-ms="4123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyMsgWhenDuplicateEmailIsAdded()[pri:4, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:13 PDT" name="verifyMsgWhenDuplicateEmailIsAdded" finished-at="2025-03-10T13:17:16 PDT" duration-ms="2287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMsgWhenDuplicateEmailIsAdded -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:16 PDT" name="tearDown" finished-at="2025-03-10T13:17:16 PDT" duration-ms="239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:16 PDT" name="setUp" finished-at="2025-03-10T13:17:20 PDT" duration-ms="3924" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="uncheckTheAcceptCheckboxAndSubmit()[pri:5, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:20 PDT" name="uncheckTheAcceptCheckboxAndSubmit" finished-at="2025-03-10T13:17:22 PDT" duration-ms="2404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uncheckTheAcceptCheckboxAndSubmit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:22 PDT" name="tearDown" finished-at="2025-03-10T13:17:22 PDT" duration-ms="229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:22 PDT" name="setUp" finished-at="2025-03-10T13:17:26 PDT" duration-ms="3863" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorMsgIfAllFieldsAreBlanks()[pri:6, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:26 PDT" name="verifyErrorMsgIfAllFieldsAreBlanks" finished-at="2025-03-10T13:17:29 PDT" duration-ms="2332" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorMsgIfAllFieldsAreBlanks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.RegistrationTest@6cb107fd]" started-at="2025-03-10T13:17:29 PDT" name="tearDown" finished-at="2025-03-10T13:17:29 PDT" duration-ms="238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tutorialninja.testcases.RegistrationTest -->
-    </test> <!-- LoginTest -->
-    <test started-at="2025-03-10T13:17:30 PDT" name="RegistrationTest" finished-at="2025-03-10T13:18:19 PDT" duration-ms="49715">
+    <test started-at="2025-03-11T18:02:55 PDT" name="LoginTest" finished-at="2025-03-11T18:03:20 PDT" duration-ms="25243">
       <class name="com.tutorialninja.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:30 PDT" name="setUp" finished-at="2025-03-10T13:17:34 PDT" duration-ms="4402" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:02:55 PDT" name="setUp" finished-at="2025-03-11T18:03:02 PDT" duration-ms="7337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithValidCred()[pri:1, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:34 PDT" name="loginWithValidCred" finished-at="2025-03-10T13:17:36 PDT" duration-ms="2356" status="PASS">
+        <test-method signature="loginWithValidCred()[pri:1, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:03:02 PDT" name="loginWithValidCred" finished-at="2025-03-11T18:03:13 PDT" duration-ms="11517" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Edit your accoiunt information"}
+  (Session info: chrome=134.0.6998.45)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2dfe44c0281243a0e8e79f5066edc008, findElement {using=link text, value=Edit your accoiunt information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.45, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/qh/kvckxsb55ss...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56159/devtoo..., se:cdpVersion: 134.0.6998.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2dfe44c0281243a0e8e79f5066edc008]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Edit your accoiunt information"}
+  (Session info: chrome=134.0.6998.45)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2dfe44c0281243a0e8e79f5066edc008, findElement {using=link text, value=Edit your accoiunt information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.45, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/qh/kvckxsb55ss...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56159/devtoo..., se:cdpVersion: 134.0.6998.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2dfe44c0281243a0e8e79f5066edc008
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at com.tutorialninja.testcases.LoginTest.loginWithValidCred(LoginTest.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[<a href=Tue_Mar_11_18_03_13_PDT_2025.jpg target="_blank">Screenshot link</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=Tue_Mar_11_18_03_13_PDT_2025.jpg target="_blank"><img src=Tue_Mar_11_18_03_13_PDT_2025.jpg height=200 width=200></a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loginWithValidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:36 PDT" name="tearDown" finished-at="2025-03-10T13:17:37 PDT" duration-ms="231" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:03:14 PDT" name="tearDown" finished-at="2025-03-11T18:03:14 PDT" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:37 PDT" name="setUp" finished-at="2025-03-10T13:17:41 PDT" duration-ms="4058" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:03:14 PDT" name="setUp" finished-at="2025-03-11T18:03:18 PDT" duration-ms="4331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCred()[pri:2, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:41 PDT" name="loginWithInvalidCred" finished-at="2025-03-10T13:17:42 PDT" duration-ms="1633" status="PASS">
+        <test-method signature="loginWithInvalidCred()[pri:2, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:03:18 PDT" name="loginWithInvalidCred" finished-at="2025-03-11T18:03:20 PDT" duration-ms="1235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:42 PDT" name="tearDown" finished-at="2025-03-10T13:17:42 PDT" duration-ms="226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:42 PDT" name="setUp" finished-at="2025-03-10T13:17:46 PDT" duration-ms="3962" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithvalidIDAndInvalidPass()[pri:3, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:46 PDT" name="loginWithvalidIDAndInvalidPass" finished-at="2025-03-10T13:17:48 PDT" duration-ms="1102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithvalidIDAndInvalidPass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:48 PDT" name="tearDown" finished-at="2025-03-10T13:17:48 PDT" duration-ms="212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:48 PDT" name="setUp" finished-at="2025-03-10T13:17:52 PDT" duration-ms="4614" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidIDAndValidPass()[pri:4, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:52 PDT" name="loginWithInvalidIDAndValidPass" finished-at="2025-03-10T13:17:54 PDT" duration-ms="1155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidIDAndValidPass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:54 PDT" name="tearDown" finished-at="2025-03-10T13:17:54 PDT" duration-ms="239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:54 PDT" name="setUp" finished-at="2025-03-10T13:17:58 PDT" duration-ms="4098" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithblankCred()[pri:5, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:58 PDT" name="loginWithblankCred" finished-at="2025-03-10T13:17:59 PDT" duration-ms="998" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithblankCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:59 PDT" name="tearDown" finished-at="2025-03-10T13:17:59 PDT" duration-ms="218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:17:59 PDT" name="setUp" finished-at="2025-03-10T13:18:03 PDT" duration-ms="3951" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="forgotPassword()[pri:6, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:03 PDT" name="forgotPassword" finished-at="2025-03-10T13:18:04 PDT" duration-ms="510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- forgotPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:04 PDT" name="tearDown" finished-at="2025-03-10T13:18:04 PDT" duration-ms="265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:04 PDT" name="setUp" finished-at="2025-03-10T13:18:08 PDT" duration-ms="4072" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="keyboardActions()[pri:7, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:08 PDT" name="keyboardActions" finished-at="2025-03-10T13:18:09 PDT" duration-ms="1362" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- keyboardActions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:09 PDT" name="tearDown" finished-at="2025-03-10T13:18:10 PDT" duration-ms="267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:10 PDT" name="setUp" finished-at="2025-03-10T13:18:14 PDT" duration-ms="4008" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyPlaceholder()[pri:8, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:14 PDT" name="verifyPlaceholder" finished-at="2025-03-10T13:18:14 PDT" duration-ms="84" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPlaceholder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:14 PDT" name="tearDown" finished-at="2025-03-10T13:18:14 PDT" duration-ms="181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:14 PDT" name="setUp" finished-at="2025-03-10T13:18:18 PDT" duration-ms="3829" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="logoutAndBrowsingBack()[pri:9, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:18 PDT" name="logoutAndBrowsingBack" finished-at="2025-03-10T13:18:19 PDT" duration-ms="1444" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutAndBrowsingBack -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@3e0e1046]" started-at="2025-03-10T13:18:19 PDT" name="tearDown" finished-at="2025-03-10T13:18:19 PDT" duration-ms="213" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:03:20 PDT" name="tearDown" finished-at="2025-03-11T18:03:20 PDT" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tutorialninja.testcases.LoginTest -->
-    </test> <!-- RegistrationTest -->
+    </test> <!-- LoginTest -->
   </suite> <!-- Suite -->
 </testng-results>
