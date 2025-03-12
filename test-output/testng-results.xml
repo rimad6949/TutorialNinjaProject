@@ -2,25 +2,25 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[<a href=Tue_Mar_11_18_03_13_PDT_2025.jpg target="_blank">Screenshot link</a>]]>
+      <![CDATA[<a href='/Users/rimadas/eclipse-workspace/TutorialNinjaProject/target/Screenshots/Tue_Mar_11_18_26_00_PDT_2025.jpg' target='_blank'>Screenshot link</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a href=Tue_Mar_11_18_03_13_PDT_2025.jpg target="_blank"><img src=Tue_Mar_11_18_03_13_PDT_2025.jpg height=200 width=200></a>]]>
+      <![CDATA[<a href='/Users/rimadas/eclipse-workspace/TutorialNinjaProject/target/Screenshots/Tue_Mar_11_18_26_00_PDT_2025.jpg' target='_blank'><img src='/Users/rimadas/eclipse-workspace/TutorialNinjaProject/target/Screenshots/Tue_Mar_11_18_26_00_PDT_2025.jpg' height=300 width=300></a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-03-11T18:02:55 PDT" name="Suite" finished-at="2025-03-11T18:03:20 PDT" duration-ms="25243">
+  <suite started-at="2025-03-11T18:25:40 PDT" name="Suite" finished-at="2025-03-11T18:26:07 PDT" duration-ms="26307">
     <groups>
     </groups>
-    <test started-at="2025-03-11T18:02:55 PDT" name="LoginTest" finished-at="2025-03-11T18:03:20 PDT" duration-ms="25243">
+    <test started-at="2025-03-11T18:25:40 PDT" name="LoginTest" finished-at="2025-03-11T18:26:07 PDT" duration-ms="26307">
       <class name="com.tutorialninja.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:02:55 PDT" name="setUp" finished-at="2025-03-11T18:03:02 PDT" duration-ms="7337" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:25:40 PDT" name="setUp" finished-at="2025-03-11T18:25:49 PDT" duration-ms="8119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithValidCred()[pri:1, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:03:02 PDT" name="loginWithValidCred" finished-at="2025-03-11T18:03:13 PDT" duration-ms="11517" status="FAIL">
+        <test-method signature="loginWithValidCred()[pri:1, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:25:49 PDT" name="loginWithValidCred" finished-at="2025-03-11T18:26:00 PDT" duration-ms="11535" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Edit your accoiunt information"}
@@ -29,9 +29,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2dfe44c0281243a0e8e79f5066edc008, findElement {using=link text, value=Edit your accoiunt information}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.45, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/qh/kvckxsb55ss...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56159/devtoo..., se:cdpVersion: 134.0.6998.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2dfe44c0281243a0e8e79f5066edc008]]>
+Command: [bd218219f10a94792cb044bd65bbe1e1, findElement {using=link text, value=Edit your accoiunt information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.45, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/qh/kvckxsb55ss...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56620/devtoo..., se:cdpVersion: 134.0.6998.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd218219f10a94792cb044bd65bbe1e1]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Edit your accoiunt information"}
@@ -40,9 +40,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2dfe44c0281243a0e8e79f5066edc008, findElement {using=link text, value=Edit your accoiunt information}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.45, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/qh/kvckxsb55ss...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56159/devtoo..., se:cdpVersion: 134.0.6998.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2dfe44c0281243a0e8e79f5066edc008
+Command: [bd218219f10a94792cb044bd65bbe1e1, findElement {using=link text, value=Edit your accoiunt information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.45, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/qh/kvckxsb55ss...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56620/devtoo..., se:cdpVersion: 134.0.6998.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd218219f10a94792cb044bd65bbe1e1
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -93,29 +93,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<a href=Tue_Mar_11_18_03_13_PDT_2025.jpg target="_blank">Screenshot link</a>]]>
+              <![CDATA[<a href='/Users/rimadas/eclipse-workspace/TutorialNinjaProject/target/Screenshots/Tue_Mar_11_18_26_00_PDT_2025.jpg' target='_blank'>Screenshot link</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a href=Tue_Mar_11_18_03_13_PDT_2025.jpg target="_blank"><img src=Tue_Mar_11_18_03_13_PDT_2025.jpg height=200 width=200></a>]]>
+              <![CDATA[<a href='/Users/rimadas/eclipse-workspace/TutorialNinjaProject/target/Screenshots/Tue_Mar_11_18_26_00_PDT_2025.jpg' target='_blank'><img src='/Users/rimadas/eclipse-workspace/TutorialNinjaProject/target/Screenshots/Tue_Mar_11_18_26_00_PDT_2025.jpg' height=300 width=300></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginWithValidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:03:14 PDT" name="tearDown" finished-at="2025-03-11T18:03:14 PDT" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:26:01 PDT" name="tearDown" finished-at="2025-03-11T18:26:01 PDT" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:03:14 PDT" name="setUp" finished-at="2025-03-11T18:03:18 PDT" duration-ms="4331" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:26:01 PDT" name="setUp" finished-at="2025-03-11T18:26:05 PDT" duration-ms="4359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCred()[pri:2, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:03:18 PDT" name="loginWithInvalidCred" finished-at="2025-03-11T18:03:20 PDT" duration-ms="1235" status="PASS">
+        <test-method signature="loginWithInvalidCred()[pri:2, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:26:05 PDT" name="loginWithInvalidCred" finished-at="2025-03-11T18:26:06 PDT" duration-ms="1255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:03:20 PDT" name="tearDown" finished-at="2025-03-11T18:03:20 PDT" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@2ab4bc72]" started-at="2025-03-11T18:26:06 PDT" name="tearDown" finished-at="2025-03-11T18:26:07 PDT" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

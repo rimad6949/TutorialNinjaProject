@@ -48,21 +48,20 @@ public class ExtentListeners implements ITestListener {
 
 		ScreenshotUtils.capturePageScreenshot();
 
+		String screenshotPath = System.getProperty("user.dir") + "/target/Screenshots/" + ScreenshotUtils.filename;
+
 		System.setProperty("org.uncommons.reportng.escape-output", "false");
-		Reporter.log("<a href=" + ScreenshotUtils.filename + " target=\"_blank\">Screenshot link</a>");
+		Reporter.log("<a href='" + screenshotPath + "' target='_blank'>Screenshot link</a>");
 		Reporter.log("<br>");
-		Reporter.log("<a href=" + ScreenshotUtils.filename + " target=\"_blank\"><img src=" + ScreenshotUtils.filename
-				+ " height=200 width=200></a>");
+		Reporter.log("<a href='" + screenshotPath + "' target='_blank'><img src='" + screenshotPath + "' height=300 width=300></a>");
 
 		String methodName = result.getMethod().getMethodName();
 		String logText = "<b>" + "TEST CASE:- " + methodName.toUpperCase() + " FAILED" + "</b>";
 
 		try {
-			String screenshot = ScreenshotUtils.filename;
 			test.fail("<b><font color=red>" + "Screenshot of failure" + "</font></b><br>",
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshot).build());
+					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
