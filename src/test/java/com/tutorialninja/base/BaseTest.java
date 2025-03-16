@@ -1,29 +1,26 @@
 package com.tutorialninja.base;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 
-	public WebDriver driver;
-	public Properties config;
-	public FileInputStream fis;
+	public static WebDriver driver;
+	public static Properties config;
+	public static FileInputStream fis;
+	public static Logger log = LogManager.getLogger(BaseTest.class.getName());
 
 	@BeforeMethod
 	public void setUp() {
@@ -47,14 +44,18 @@ public class BaseTest {
 		String browser = config.getProperty("browserName");
 
 		if (browser.equalsIgnoreCase("chrome")) {
+			log.info("Launching Chrome Browser");
 			driver = new ChromeDriver();
+			
 
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
+			log.info("Launching Firefox Browser");
 
 		}
 
 		driver.get(config.getProperty("testSiteURL"));
+		log.info("Launching the URL");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
