@@ -31,12 +31,13 @@ public class LoginTest extends BaseTest {
 	@Test(priority = 1)
 	public void loginWithValidCred() {
 
+		log.info("Executing test case to login with valid credentials");
 		lp = new LoginPage(driver);
 		lp.addEmailAddress("minnie001@gmail.com");
 		lp.addpassword("test1234");
 		lp.clickOnLogin();
 		// Verifying that after login "Edit your account information" link is displayed
-		AssertJUnit.assertTrue(driver.findElement(By.linkText("Edit your accoiunt information")).isDisplayed());
+		AssertJUnit.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 		lp.clickOnMyAct();
 		lp.clickOnLogout();
 
@@ -45,6 +46,7 @@ public class LoginTest extends BaseTest {
 	@Test(priority = 2)
 	public void loginWithInvalidCred() {
 
+		log.info("Executing test case to login with invalid credentials");
 		lp = new LoginPage(driver);
 		lp.addEmailAddress("minnie" + getEmailAddress() + "01@gmail.com");
 		lp.addpassword("test123w4");
