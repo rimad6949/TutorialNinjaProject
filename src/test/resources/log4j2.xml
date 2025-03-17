@@ -7,7 +7,7 @@
         </Console>
 
         <!-- File Appender -->
-        <File name="File" fileName="logs/test-output.log">
+        <File name="File" fileName="/Users/rimadas/eclipse-workspace/TutorialNinjaProject/src/test/resources/logs/application_logs.log">
             <PatternLayout>
                 <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
             </PatternLayout>

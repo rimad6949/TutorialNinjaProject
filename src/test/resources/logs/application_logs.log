@@ -1,0 +1,6 @@
+2025-03-17 14:54:47 [main] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-17 14:54:53 [main] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-17 14:54:53 [main] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-17 14:54:56 [main] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-17 14:55:00 [main] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-17 14:55:00 [main] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
