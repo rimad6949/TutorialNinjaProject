@@ -4,3 +4,79 @@
 2025-03-17 14:54:56 [main] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
 2025-03-17 14:55:00 [main] INFO  com.tutorialninja.base.BaseTest - Launching the URL
 2025-03-17 14:55:00 [main] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
+2025-03-17 16:36:40 [main] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-17 16:36:47 [main] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-17 16:36:47 [main] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-17 16:36:50 [main] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-17 16:36:54 [main] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-17 16:36:55 [main] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
+2025-03-20 15:28:44 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 15:28:44 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 15:28:57 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 15:28:57 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 15:28:57 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 15:28:57 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 15:29:10 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 15:29:18 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 15:29:18 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
+2025-03-20 15:59:16 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 15:59:17 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 15:59:19 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 15:59:20 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 15:59:20 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 15:59:20 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 15:59:40 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 15:59:42 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 15:59:42 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
+2025-03-20 16:00:47 [main] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 16:00:49 [main] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 16:00:49 [main] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 16:00:59 [main] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 16:01:01 [main] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 16:01:01 [main] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
+2025-03-20 17:17:14 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 17:17:24 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 17:17:26 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:17:26 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 17:17:37 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 17:17:40 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:17:40 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
+2025-03-20 17:17:46 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:17:46 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 17:17:49 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 17:17:54 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:17:54 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
+2025-03-20 17:18:46 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 17:18:53 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:18:53 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 17:18:56 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 17:18:59 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 17:19:02 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:19:02 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 17:19:05 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:19:10 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 17:19:12 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:19:12 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
+2025-03-20 17:20:44 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 17:20:51 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:20:51 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 17:20:55 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 17:20:56 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 17:20:59 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:20:59 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 17:21:02 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:21:08 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 17:21:10 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:21:11 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
+2025-03-20 17:28:00 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 17:28:10 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:28:11 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 17:28:14 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching Chrome Browser
+2025-03-20 17:28:20 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:28:20 [TestNG-tests-1] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials
+2025-03-20 17:28:30 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 17:28:32 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:28:32 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with valid credentials
+2025-03-20 17:28:40 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching Firefox Browser
+2025-03-20 17:28:42 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Launching the URL
+2025-03-20 17:28:42 [TestNG-tests-2] INFO  com.tutorialninja.base.BaseTest - Executing test case to login with invalid credentials

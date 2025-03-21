@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Parallel Test Suite" parallel="tests" thread-count="2">
 <listeners>
   <listener class-name="org.uncommons.reportng.HTMLReporter" />
   <listener class-name="com.tutorialninja.utilities.ExtentListeners" />
 </listeners>
-
-  <test name = "LoginTest">
+  <test name = "LoginTest ChromeTest">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.tutorialninja.testcases.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name = "LoginTest FirefoxTest">
+  <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.tutorialninja.testcases.LoginTest"/>
     </classes>

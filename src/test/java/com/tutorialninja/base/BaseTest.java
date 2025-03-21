@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 public class BaseTest {
 
@@ -23,7 +24,8 @@ public class BaseTest {
 	public static Logger log = LogManager.getLogger(BaseTest.class.getName());
 
 	@BeforeMethod
-	public void setUp() {
+	@Parameters("browser")
+	public void setUp(String browser) {
 
 		config = new Properties();
 		try {
@@ -41,7 +43,7 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 
-		String browser = config.getProperty("browserName");
+		String browserName = config.getProperty("browser");
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			log.info("Launching Chrome Browser");
