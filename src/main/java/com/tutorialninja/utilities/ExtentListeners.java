@@ -26,14 +26,13 @@ public class ExtentListeners implements ITestListener {
 			.extentReportSetup(System.getProperty("user.dir") + "/target/ExtentReports/" + reportfileName);
 	public static ExtentTest test;
 
-	@Override
+
 	public void onTestStart(ITestResult result) {
 
 		test = extent
 				.createTest(result.getTestClass().getName() + " @TestCase : " + result.getMethod().getMethodName());
 	}
 
-	@Override
 	public void onTestSuccess(ITestResult result) {
 
 		String methodName = result.getMethod().getMethodName();
@@ -43,7 +42,6 @@ public class ExtentListeners implements ITestListener {
 
 	}
 
-	@Override
 	public void onTestFailure(ITestResult result) {
 
 		ScreenshotUtils.capturePageScreenshot();
@@ -70,7 +68,7 @@ public class ExtentListeners implements ITestListener {
 
 	}
 
-	@Override
+
 	public void onTestSkipped(ITestResult result) {
 
 		String methodName = result.getMethod().getMethodName();
@@ -80,22 +78,22 @@ public class ExtentListeners implements ITestListener {
 
 	}
 
-	@Override
+
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 
 	}
 
-	@Override
+
 	public void onTestFailedWithTimeout(ITestResult result) {
 
 	}
 
-	@Override
+
 	public void onStart(ITestContext context) {
 
 	}
 
-	@Override
+
 	public void onFinish(ITestContext context) {
 
 		if (extent != null) {

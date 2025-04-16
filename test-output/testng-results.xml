@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-20T17:28:00 PDT" name="Parallel Test Suite" finished-at="2025-03-20T17:28:44 PDT" duration-ms="44711">
+  <suite started-at="2025-04-15T18:30:08 PDT" name="Suite" finished-at="2025-04-15T18:30:30 PDT" duration-ms="21336">
     <groups>
     </groups>
-    <test started-at="2025-03-20T17:28:00 PDT" name="LoginTest ChromeTest" finished-at="2025-03-20T17:28:22 PDT" duration-ms="22489">
-      <class name="com.tutorialninja.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.LoginTest@64337702]" started-at="2025-03-20T17:28:00 PDT" name="setUp" finished-at="2025-03-20T17:28:11 PDT" duration-ms="10977" status="PASS">
+    <test started-at="2025-04-15T18:30:08 PDT" name="SearchTest" finished-at="2025-04-15T18:30:30 PDT" duration-ms="21336">
+      <class name="com.tutorialninja.testcases.SearchTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:08 PDT" name="setUp" finished-at="2025-04-15T18:30:13 PDT" duration-ms="4949" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithValidCred()[pri:1, instance:com.tutorialninja.testcases.LoginTest@64337702]" started-at="2025-03-20T17:28:11 PDT" name="loginWithValidCred" finished-at="2025-03-20T17:28:14 PDT" duration-ms="2884" status="PASS">
+        <test-method signature="searchWithExistingProduct()[pri:1, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:13 PDT" name="searchWithExistingProduct" finished-at="2025-04-15T18:30:15 PDT" duration-ms="2131" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithValidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@64337702]" started-at="2025-03-20T17:28:14 PDT" name="tearDown" finished-at="2025-03-20T17:28:14 PDT" duration-ms="211" status="PASS">
+        </test-method> <!-- searchWithExistingProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:15 PDT" name="tearDown" finished-at="2025-04-15T18:30:16 PDT" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.LoginTest@64337702]" started-at="2025-03-20T17:28:14 PDT" name="setUp" finished-at="2025-03-20T17:28:20 PDT" duration-ms="6432" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:16 PDT" name="setUp" finished-at="2025-04-15T18:30:21 PDT" duration-ms="5237" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,57 +37,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCred()[pri:2, instance:com.tutorialninja.testcases.LoginTest@64337702]" started-at="2025-03-20T17:28:20 PDT" name="loginWithInvalidCred" finished-at="2025-03-20T17:28:22 PDT" duration-ms="1524" status="PASS">
+        <test-method signature="searchWithNonExistingProduct()[pri:2, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:21 PDT" name="searchWithNonExistingProduct" finished-at="2025-04-15T18:30:22 PDT" duration-ms="1623" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@64337702]" started-at="2025-03-20T17:28:22 PDT" name="tearDown" finished-at="2025-03-20T17:28:22 PDT" duration-ms="341" status="PASS">
+        </test-method> <!-- searchWithNonExistingProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:22 PDT" name="tearDown" finished-at="2025-04-15T18:30:22 PDT" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tutorialninja.testcases.LoginTest -->
-    </test> <!-- LoginTest ChromeTest -->
-    <test started-at="2025-03-20T17:28:00 PDT" name="LoginTest FirefoxTest" finished-at="2025-03-20T17:28:44 PDT" duration-ms="44711">
-      <class name="com.tutorialninja.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.LoginTest@439a8f59]" started-at="2025-03-20T17:28:00 PDT" name="setUp" finished-at="2025-03-20T17:28:32 PDT" duration-ms="31888" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:22 PDT" name="setUp" finished-at="2025-04-15T18:30:27 PDT" duration-ms="4365" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithValidCred()[pri:1, instance:com.tutorialninja.testcases.LoginTest@439a8f59]" started-at="2025-03-20T17:28:32 PDT" name="loginWithValidCred" finished-at="2025-03-20T17:28:34 PDT" duration-ms="2742" status="PASS">
+        <test-method signature="selectSubCatagory()[pri:3, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:27 PDT" name="selectSubCatagory" finished-at="2025-04-15T18:30:29 PDT" duration-ms="2625" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithValidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@439a8f59]" started-at="2025-03-20T17:28:34 PDT" name="tearDown" finished-at="2025-03-20T17:28:36 PDT" duration-ms="1284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.LoginTest@439a8f59]" started-at="2025-03-20T17:28:36 PDT" name="setUp" finished-at="2025-03-20T17:28:42 PDT" duration-ms="6331" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCred()[pri:2, instance:com.tutorialninja.testcases.LoginTest@439a8f59]" started-at="2025-03-20T17:28:42 PDT" name="loginWithInvalidCred" finished-at="2025-03-20T17:28:43 PDT" duration-ms="1265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.LoginTest@439a8f59]" started-at="2025-03-20T17:28:43 PDT" name="tearDown" finished-at="2025-03-20T17:28:44 PDT" duration-ms="1102" status="PASS">
+        </test-method> <!-- selectSubCatagory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:29 PDT" name="tearDown" finished-at="2025-04-15T18:30:30 PDT" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tutorialninja.testcases.LoginTest -->
-    </test> <!-- LoginTest FirefoxTest -->
-  </suite> <!-- Parallel Test Suite -->
+      </class> <!-- com.tutorialninja.testcases.SearchTest -->
+    </test> <!-- SearchTest -->
+  </suite> <!-- Suite -->
 </testng-results>

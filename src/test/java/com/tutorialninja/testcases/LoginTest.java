@@ -1,23 +1,10 @@
 package com.tutorialninja.testcases;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import java.util.Date;
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import com.tutorialninja.base.BaseTest;
@@ -27,10 +14,19 @@ public class LoginTest extends BaseTest {
 
 	LoginPage lp;
 	Actions action;
+	WebDriver driver;
+	
+	public void loginfunctionality() {
+		driver = getDriver();
+		lp = new LoginPage(driver);
+		lp.addEmailAddress("minnie001@gmail.com");
+		lp.addpassword("test1234");
+		lp.clickOnLogin();
+	}
 
 	@Test(priority = 1)
 	public void loginWithValidCred() {
-
+		driver = getDriver();
 		log.info("Executing test case to login with valid credentials");
 		lp = new LoginPage(driver);
 		lp.addEmailAddress("minnie001@gmail.com");
@@ -45,7 +41,7 @@ public class LoginTest extends BaseTest {
 
 	@Test(priority = 2)
 	public void loginWithInvalidCred() {
-
+		driver = getDriver();
 		log.info("Executing test case to login with invalid credentials");
 		lp = new LoginPage(driver);
 		lp.addEmailAddress("minnie" + getEmailAddress() + "01@gmail.com");
@@ -60,7 +56,7 @@ public class LoginTest extends BaseTest {
 
 	//@Test(priority = 3)
 	public void loginWithvalidIDAndInvalidPass() {
-
+		driver = getDriver();
 		lp = new LoginPage(driver);
 		lp.addEmailAddress("minnie001@gmail.com");
 		lp.addpassword("test123423");
@@ -73,7 +69,7 @@ public class LoginTest extends BaseTest {
 
 	//@Test(priority = 4)
 	public void loginWithInvalidIDAndValidPass() {
-
+		driver = getDriver();
 		lp = new LoginPage(driver);
 		lp.addEmailAddress("minnie00112@gmail.com");
 		lp.addpassword("test123423");
@@ -86,7 +82,7 @@ public class LoginTest extends BaseTest {
 
 	//@Test(priority = 5)
 	public void loginWithblankCred() {
-
+		driver = getDriver();
 		lp = new LoginPage(driver);
 		lp.addEmailAddress("");
 		lp.addpassword("");
@@ -98,6 +94,7 @@ public class LoginTest extends BaseTest {
 
 	//@Test(priority = 6)
 	public void forgotPassword() throws InterruptedException {
+		driver = getDriver();
 		lp = new LoginPage(driver);
 		lp.clickOnForgotPassword();		
 		String pageTitle = driver.findElement(By.xpath("//*[@id='content']/h1")).getText();
@@ -109,6 +106,7 @@ public class LoginTest extends BaseTest {
 	//@Test(priority = 7)
 	public void keyboardActions() {
 
+		driver = getDriver();
 		lp = new LoginPage(driver);
 		lp.addEmailAddress("minnie001@gmail.com");
 		lp.addpassword("test1234");
@@ -119,6 +117,7 @@ public class LoginTest extends BaseTest {
 
 	//@Test(priority = 8)
 	public void verifyPlaceholder() {
+		driver = getDriver();
 		lp = new LoginPage(driver);
 		String emailPlaceholder = lp.getEmailPlaceholder("placeholder");
 		String expectedEmailPlaceholder = "E-Mail Address";
@@ -132,7 +131,7 @@ public class LoginTest extends BaseTest {
 
 	//@Test(priority = 9)
 	public void logoutAndBrowsingBack() {
-
+		driver = getDriver();
 		lp = new LoginPage(driver);
 		lp.addEmailAddress("minnie001@gmail.com");
 		lp.addpassword("test1234");
