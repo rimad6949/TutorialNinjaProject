@@ -9,6 +9,7 @@ import org.testng.AssertJUnit;
 import java.util.HashMap;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -18,10 +19,11 @@ import com.tutorialninja.pages.RegistrationPage;
 public class RegistrationTest extends BaseTest {
 
 	RegistrationPage rp;
+	WebDriver driver;
 
 	@Test(priority = 1)
 	public void verifyRegisteringAUser() {
-
+		driver = getDriver();
 		rp = new RegistrationPage(driver);
 		rp.clickOnRegister();
 		rp.enterFName("Lin");
@@ -38,7 +40,7 @@ public class RegistrationTest extends BaseTest {
 
 	@Test(priority = 2)
 	public void verifyErrorMsgIfFirstNameFieldAreBlanks() {
-
+		driver = getDriver();
 		rp = new RegistrationPage(driver);
 		rp.clickOnRegister();
 		rp.enterFName("");
@@ -55,6 +57,7 @@ public class RegistrationTest extends BaseTest {
 	
 	@Test(priority = 3)
 	public void verifyMsgEnteringTwoDifferentPasswords() {
+		driver = getDriver();
 		rp = new RegistrationPage(driver);
 		rp.clickOnRegister();
 		rp.enterFName("Lin");
@@ -72,7 +75,7 @@ public class RegistrationTest extends BaseTest {
 
 	@Test(priority=4)
 	public void verifyMsgWhenDuplicateEmailIsAdded() {
-
+		driver = getDriver();
 		rp = new RegistrationPage(driver);
 		rp.clickOnRegister();
 		rp.enterFName("Lin");
@@ -90,6 +93,7 @@ public class RegistrationTest extends BaseTest {
 	 
 	 @Test(priority=5)
 	public void uncheckTheAcceptCheckboxAndSubmit(){
+		driver = getDriver();
 		rp = new RegistrationPage(driver);
 		rp.clickOnRegister();
 		rp.enterFName("Lin");
@@ -106,7 +110,7 @@ public class RegistrationTest extends BaseTest {
 	
 	@Test(priority=6)
 	public void verifyErrorMsgIfAllFieldsAreBlanks() {
-		
+		driver = getDriver();
 		rp = new RegistrationPage(driver);
 		rp.clickOnRegister();
 		rp.enterFName("");
