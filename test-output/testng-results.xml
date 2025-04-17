@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-15T18:30:08 PDT" name="Suite" finished-at="2025-04-15T18:30:30 PDT" duration-ms="21336">
+  <suite started-at="2025-04-16T17:25:46 PDT" name="Suite" finished-at="2025-04-16T17:26:04 PDT" duration-ms="17363">
     <groups>
     </groups>
-    <test started-at="2025-04-15T18:30:08 PDT" name="SearchTest" finished-at="2025-04-15T18:30:30 PDT" duration-ms="21336">
+    <test started-at="2025-04-16T17:25:46 PDT" name="SearchTest" finished-at="2025-04-16T17:26:04 PDT" duration-ms="17363">
       <class name="com.tutorialninja.testcases.SearchTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:08 PDT" name="setUp" finished-at="2025-04-15T18:30:13 PDT" duration-ms="4949" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.SearchTest@64beebb7]" started-at="2025-04-16T17:25:46 PDT" name="setUp" finished-at="2025-04-16T17:26:02 PDT" duration-ms="15306" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,49 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchWithExistingProduct()[pri:1, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:13 PDT" name="searchWithExistingProduct" finished-at="2025-04-15T18:30:15 PDT" duration-ms="2131" status="PASS">
+        <test-method signature="verifyProductWithSpecialChar()[pri:0, instance:com.tutorialninja.testcases.SearchTest@64beebb7]" started-at="2025-04-16T17:26:02 PDT" name="verifyProductWithSpecialChar" finished-at="2025-04-16T17:26:04 PDT" duration-ms="1906" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchWithExistingProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:15 PDT" name="tearDown" finished-at="2025-04-15T18:30:16 PDT" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:16 PDT" name="setUp" finished-at="2025-04-15T18:30:21 PDT" duration-ms="5237" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchWithNonExistingProduct()[pri:2, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:21 PDT" name="searchWithNonExistingProduct" finished-at="2025-04-15T18:30:22 PDT" duration-ms="1623" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchWithNonExistingProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:22 PDT" name="tearDown" finished-at="2025-04-15T18:30:22 PDT" duration-ms="130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:22 PDT" name="setUp" finished-at="2025-04-15T18:30:27 PDT" duration-ms="4365" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="selectSubCatagory()[pri:3, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:27 PDT" name="selectSubCatagory" finished-at="2025-04-15T18:30:29 PDT" duration-ms="2625" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSubCatagory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.SearchTest@bcec031]" started-at="2025-04-15T18:30:29 PDT" name="tearDown" finished-at="2025-04-15T18:30:30 PDT" duration-ms="117" status="PASS">
+        </test-method> <!-- verifyProductWithSpecialChar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.testcases.SearchTest@64beebb7]" started-at="2025-04-16T17:26:04 PDT" name="tearDown" finished-at="2025-04-16T17:26:04 PDT" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
