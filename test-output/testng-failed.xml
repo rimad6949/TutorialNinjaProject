@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Parallel Test Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="com.tutorialninja.utilities.ExtentListeners"/>
-  </listeners>
-  <test thread-count="2" parallel="tests" name="LoginTest FirefoxTest(failed)">
-    <parameter name="browser" value="firefox"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tutorialninja.testcases.LoginTest">
+      <class name="com.tutorialninja.testcases.SearchTest">
         <methods>
-          <include name="loginWithValidCred"/>
+          <include name="verifyProductWithSpecialChar"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.tutorialninja.testcases.LoginTest -->
+      </class> <!-- com.tutorialninja.testcases.SearchTest -->
     </classes>
-  </test> <!-- LoginTest FirefoxTest(failed) -->
-  <test thread-count="2" parallel="tests" name="LoginTest ChromeTest(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.tutorialninja.testcases.LoginTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="loginWithInvalidCred"/>
-        </methods>
-      </class> <!-- com.tutorialninja.testcases.LoginTest -->
-    </classes>
-  </test> <!-- LoginTest ChromeTest(failed) -->
-</suite> <!-- Failed suite [Parallel Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

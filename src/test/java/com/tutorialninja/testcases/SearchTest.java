@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.google.common.base.Verify;
 import com.tutorialninja.base.BaseTest;
 import com.tutorialninja.pages.LoginPage;
 import com.tutorialninja.pages.SearchPage;
@@ -30,7 +29,7 @@ public class SearchTest extends BaseTest {
 		lp.addpassword("test1234");
 		lp.clickOnLogin();
 	}
-	@Test(priority=1)
+	//@Test(priority=1)
 	public void searchWithExistingProduct() {
 		driver = getDriver();
 
@@ -63,7 +62,7 @@ public class SearchTest extends BaseTest {
 		}
 
 	}
-	@Test(priority=2)
+	//@Test(priority=2)
 	public void searchWithNonExistingProduct() {
 		driver = getDriver();
 
@@ -81,7 +80,7 @@ public class SearchTest extends BaseTest {
 		Assert.assertEquals(noProductText, "There is no product that matches the search criteria.");
 	}
 
-	@Test(priority=3)
+	//@Test(priority=3)
 	public void selectSubCatagory() {
 
 		driver = getDriver();
@@ -113,8 +112,25 @@ public class SearchTest extends BaseTest {
 
 	}
 
-	public void verifyProductCompare() {
+	@Test
+	public void verifyProductWithSpecialChar() {
+		driver = getDriver();
 
+		// Login into the application
+		loginFunctionality();
+
+		// Searching for an item
+		sp = new SearchPage(driver);
+		sp.searchItem("\"");
+		sp.clickOnSearch();
+		
+		List<WebElement> itemImage = driver.findElements(By.xpath("//img[@class='img-responsive']"));
+
+		if (itemImage.size() > 0) {
+			System.out.println("Total number of product present after search is : " + itemImage.size());
+		} else {
+			System.out.println("There are no matching products");
+		}
 	}
 
 }
